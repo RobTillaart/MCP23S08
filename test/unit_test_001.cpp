@@ -1,9 +1,9 @@
 //
 //    FILE: unit_test_001.cpp
 //  AUTHOR: Rob Tillaart
-//    DATE: 2021-12-30
+//    DATE: 2022-01-10
 // PURPOSE: unit tests for the MCP23017
-//          https://github.com/RobTillaart/MCP23017_RT
+//          https://github.com/RobTillaart/MCP2308
 //          https://github.com/Arduino-CI/arduino_ci/blob/master/REFERENCE.md
 //
 
@@ -33,12 +33,12 @@
 
 
 #include "Arduino.h"
-#include "MCP23S17.h"
+#include "MCP23S08.h"
 
 
 unittest_setup()
 {
-  fprintf(stderr, "MCP23S17_LIB_VERSION: %s\n", (char *) MCP23S17_LIB_VERSION);
+  fprintf(stderr, "MCP23S08_LIB_VERSION: %s\n", (char *) MCP23S08_LIB_VERSION);
 }
 
 
@@ -49,12 +49,12 @@ unittest_teardown()
 
 unittest(test_constants)
 {
-  assertEqual(MCP23S17_OK          , 0x00);
-  assertEqual(MCP23S17_PIN_ERROR   , 0x81);
-  assertEqual(MCP23S17_SPI_ERROR   , 0x82);
-  assertEqual(MCP23S17_VALUE_ERROR , 0x83);
-  assertEqual(MCP23S17_PORT_ERROR  , 0x84);
-  assertEqual(MCP23S17_INVALID_READ, -100);
+  assertEqual(MCP23S08_OK          , 0x00);
+  assertEqual(MCP23S08_PIN_ERROR   , 0x81);
+  assertEqual(MCP23S08_SPI_ERROR   , 0x82);
+  assertEqual(MCP23S08_VALUE_ERROR , 0x83);
+  assertEqual(MCP23S08_PORT_ERROR  , 0x84);
+  assertEqual(MCP23S08_INVALID_READ, -100);
 }
 
 
