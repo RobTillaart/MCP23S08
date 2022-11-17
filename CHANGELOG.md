@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - add RP2040 in build-CI
 - add changelog.md
 - minor edit readme.md
+- fix **PinStatus** bug for RP2040 build
 
 
 ## [0.1.1] - 2022-09-28
