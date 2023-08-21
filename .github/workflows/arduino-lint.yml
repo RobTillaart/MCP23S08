@@ -11,5 +11,5 @@ jobs:
         with:
           library-manager: update
           compliance: strict
-          verbose: true
+          verbose: false
 
