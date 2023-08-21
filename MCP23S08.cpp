@@ -30,6 +30,7 @@ MCP23S08::MCP23S08(uint8_t select, SPIClass* spi)
 }
 
 
+//  HARDWARE SPI
 MCP23S08::MCP23S08(uint8_t select, uint8_t address, SPIClass* spi)
 {
   _address = (address << 1);

@@ -57,7 +57,6 @@ public:
 
 
   //  8 pins interface
-  //  port  = 0..1
   //  value = bit pattern
   bool     pinMode8(uint8_t value);
   bool     write8(uint8_t value);
@@ -92,7 +91,7 @@ public:
   bool     usesHSPI();
   bool     usesVSPI();
 
-  // to overrule the ESP32s default hardware pins
+  //       to overrule the ESP32s default hardware pins
   void     setGPIOpins(uint8_t clk, uint8_t miso, uint8_t mosi, uint8_t select);
 
 #endif

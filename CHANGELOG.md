@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - add **getAddress()**
 - add **MCP23S08_registers.h**
 - update readme.md
+- update examples
 - minor edits
 
 
