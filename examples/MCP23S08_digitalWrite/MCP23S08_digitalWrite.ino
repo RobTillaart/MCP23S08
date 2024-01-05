@@ -2,7 +2,7 @@
 //    FILE: MCP23S08_digitalWrite.ino
 //  AUTHOR: Rob Tillaart
 //    DATE: 2021-12-30
-// PURPOSE: test MCP23017 library
+// PURPOSE: test MCP23S08 library
 //     URL: https://github.com/RobTillaart/MCP23S08
 
 

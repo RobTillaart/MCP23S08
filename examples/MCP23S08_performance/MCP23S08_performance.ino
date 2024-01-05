@@ -2,7 +2,7 @@
 //    FILE: MCP23S08_performance.ino
 //  AUTHOR: Rob Tillaart
 //    DATE: 2021-12-30
-// PURPOSE: test MCP23017 library
+// PURPOSE: test MCP23S08 library
 //     URL: https://github.com/RobTillaart/MCP23S08
 
 
@@ -43,7 +43,7 @@ void setup()
   start = micros();
   for (int i = 0; i < 8; i++)
   {
-    MCP.write1(0, i & 0x01);  // alternating HIGH/LOW
+    MCP.write1(0, i & 0x01);  //  alternating HIGH/LOW
   }
   stop = micros();
   Serial.println((stop - start) / 8.0);
