@@ -2,11 +2,12 @@
 //    FILE: MCP23S08_performance.ino
 //  AUTHOR: Rob Tillaart
 //    DATE: 2021-12-30
-// PUPROSE: test MCP23017 library
+// PURPOSE: test MCP23017 library
+//     URL: https://github.com/RobTillaart/MCP23S08
 
 
 #include "MCP23S08.h"
-#include "SPI.h"
+
 
 // MCP23S08 MCP(10, 12, 11, 13);  //  SW SPI address 0x00
 MCP23S08 MCP(10);           //  HW SPI address 0x00
@@ -103,4 +104,4 @@ void loop()
 }
 
 
-// -- END OF FILE --
+//  -- END OF FILE --
