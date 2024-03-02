@@ -45,8 +45,8 @@ public:
   //  SOFTWARE SPI
   MCP23S08(uint8_t select, uint8_t dataIn, uint8_t dataOut, uint8_t clock, uint8_t address = 0x00);
   //  HARDWARE SPI
-  MCP23S08(uint8_t select, __SPI_CLASS__* spi);
-  MCP23S08(uint8_t select, uint8_t address = 0x00, __SPI_CLASS__* spi = &SPI);
+  MCP23S08(int select, __SPI_CLASS__* spi);
+  MCP23S08(int select, int address = 0x00, __SPI_CLASS__* spi = &SPI);
 
   bool     begin(bool pullup = true);
   bool     isConnected();

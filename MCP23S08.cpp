@@ -24,14 +24,14 @@ MCP23S08::MCP23S08(uint8_t select, uint8_t dataIn, uint8_t dataOut, uint8_t cloc
 
 
 //  HARDWARE SPI
-MCP23S08::MCP23S08(uint8_t select, __SPI_CLASS__ * spi)
+MCP23S08::MCP23S08(int select, __SPI_CLASS__ * spi)
 {
   MCP23S08(select, 0x00, spi);
 }
 
 
 //  HARDWARE SPI
-MCP23S08::MCP23S08(uint8_t select, uint8_t address, __SPI_CLASS__ * spi)
+MCP23S08::MCP23S08(int select, int address, __SPI_CLASS__ * spi)
 {
   _address = (address << 1);
   _select  = select;
