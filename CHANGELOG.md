@@ -20,7 +20,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - update GitHub/actions to version v4 in workflows.
 - using ints as parameter in constructor.
 
-
 ## [0.5.0] - 2024-01-20
 - Fix #14, improve handling SPI dependency.
 - update examples

@@ -197,7 +197,7 @@ uint8_t MCP23S08::read1(uint8_t pin)
 }
 
 
-//  pin  = 0..7
+//  pin      = 0..7
 //  reversed = true or false
 bool MCP23S08::setPolarity(uint8_t pin,  bool reversed)
 {
@@ -249,7 +249,7 @@ bool MCP23S08::getPolarity(uint8_t pin, bool &reversed)
 }
 
 
-//  pin  = 0..7
+//  pin    = 0..7
 //  pullup = true or false
 bool MCP23S08::setPullup(uint8_t pin,  bool pullup)
 {
@@ -434,7 +434,7 @@ bool MCP23S08::enableInterrupt(uint8_t pin, uint8_t mode)
 
 bool MCP23S08::disableInterrupt(uint8_t pin)
 {
-  if (pin > 15)
+  if (pin > 7)
   {
     _error = MCP23S08_PIN_ERROR;
     return false;
