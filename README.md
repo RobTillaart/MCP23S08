@@ -16,7 +16,7 @@ Arduino library for MCP23S08 8 channel SPI port expander.
 
 ## Description
 
-This experimental library gives easy control over the 8 pins of a (SPI) MCP23S08 chip.
+This library gives easy control over the 8 pins of a (SPI) MCP23S08 chip.
 
 This IC is strongly related to the MCP23017 I2C port expander - https://github.com/RobTillaart/MCP23017_RT
 Programming Interface is kept the same as much as possible.
@@ -165,7 +165,7 @@ Returns true if successful.
 
 ### Interrupts (experimental 0.5.2)
 
-Read the datasheet for the details.  
+Read the datasheet for the details. Page 21.  
 Note: Error handling is limited.
 
 pin = 0..7  
