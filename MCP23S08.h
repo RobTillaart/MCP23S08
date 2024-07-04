@@ -68,12 +68,11 @@ public:
   bool     getPullup(uint8_t pin, bool &pullup);
 
 
- //       8 pins interface
-  //       port  = 0..1
+  //       8 pins interface
   //       mask  = 0x00..0xFF  bit pattern, 
   //               bit 0 = output mode, bit 1 = input mode
   //       value = bit pattern.
-  bool     pinMode8(uint8_t port, uint8_t mask);
+  bool     pinMode8(uint8_t mask);
   bool     write8(uint8_t value);
   int      read8();
 
