@@ -98,7 +98,7 @@ uint8_t MCP23S08::getAddress()
 //
 //  single pin interface
 //
-//  pin  = 0..15
+//  pin  = 0..7
 //  mode = INPUT, OUTPUT, INPUT_PULLUP (= same as INPUT)
 //         do NOT use 0 or 1 for mode.
 bool MCP23S08::pinMode1(uint8_t pin, uint8_t mode)
