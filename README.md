@@ -151,7 +151,7 @@ Returns true if successful.
 
 ### 8 pins interface
 
-- **bool pinMode8(uint8_t value)** value = 0..255. Returns true if successful.
+- **bool pinMode8(uint8_t mask)** mask = 0..255. Returns true if successful.
 Returns true if successful.
 - **bool write8(uint8_t value)** value = 0..255. Returns true if successful.
 Returns true if successful.
